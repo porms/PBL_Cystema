@@ -1,0 +1,648 @@
+
+  body {
+    
+    animation-fill-mode: both;
+    margin: 0;
+    padding: 0;
+    font-family: comic sans ms;
+    height: 100%;
+    overflow-y: scroll;
+    width: 100%;
+    background:linear-gradient(to bottom right, black, white);
+    overflow-x: hidden;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    flex-direction: column;
+   
+  
+    opacity: 0;
+    transform: translateY(20px); /* Move the page down initially */
+animation: fadeInSlideUp 1s ease-out forwards; /* Apply the animation directly */
+}
+
+/* Keyframe animation for fading in and sliding up */
+@keyframes fadeInSlideUp {
+from {
+opacity: 0;
+transform: translateY(20px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+  
+  
+  
+  .wrapper {
+    width: 100%;
+    max-width: 1170px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+  nav {
+    background: black;
+    height: 73px;
+  }
+  
+  .nav-area {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: left;
+    padding-top: 40px;
+   
+  }
+  
+  .logo img {
+    height: auto;
+    width: 100px;
+    padding-top: 20px;
+    margin-left: 55px;
+    margin-right: 550px;
+  }
+  
+
+  .menu-icon {
+    display: none;
+    color: black;
+  }
+  
+ 
+  
+  
+  
+  ul li {
+    margin-left: -10px;
+    margin-top: -10px;
+    
+  }
+  
+  ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border: 1px solid white;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  
+  ul li a:hover,
+  ul li a.active {
+    box-shadow: 6px 6px 6px 0px red;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+    text-decoration: none;
+  }
+  
+  .leftpane {
+    display: flex; 
+    align-items: left; 
+   margin-left: -250px;
+    margin-top: 10px;
+  }
+  
+  .leftpane i {
+    margin-right: 30px; 
+    font-size: 20px;
+    
+    
+  }
+  
+  .search-icon {
+    
+   
+    color: white;
+    cursor: pointer;
+  }
+  
+  .search-icon {
+  
+ 
+    color: white;
+    cursor: pointer;
+  }
+  
+  .search-icon {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .search-container {
+   
+     position: absolute;
+    margin-top: -8px;
+    z-index: 29;
+    transform: translateX(-105%);
+    text-align: center;
+    display: none; 
+  }
+  
+  #search-input {
+    width: 200px;
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  #search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-top: none;
+  }
+  
+  /* Search Result Item Styles */
+  #search-results a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s;
+  }
+  
+  #search-results a:hover {
+    background-color: #f5f5f5;
+  }
+  
+  
+  
+  
+  .close-search-container {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+  
+
+
+.notification-icon {
+  position: relative;
+  display: inline-block;
+}
+
+.notification-list {
+  display: none;
+  position: absolute;
+  top: 120%;
+  right: 0;
+  background-color: #fff; /* Adjust background color as needed */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow for a subtle effect */
+  padding: 20px;
+  z-index: 30;
+}
+
+.notification-list a {
+  display: block;
+  padding: 5px;
+  width: 20vh;
+  text-decoration: none;
+  color: #333; /* Adjust text color as needed */
+}
+
+.notification-list a:hover {
+  background-color: #f5f5f5; /* Adjust background color on hover as needed */
+}
+
+.view-all-link {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+
+
+
+
+
+  
+  /* Style the dropdown */
+  .dropdown {
+    display: inline-block;
+    position: relative;
+  }
+  
+  /* Style the dropdown button/icon */
+  .dropdown i {
+    cursor: pointer;
+  }
+  
+  /* Style the dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    border: 1px solid #f9f9f9;
+  }
+  
+  /* Style the dropdown links */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color on hover */
+  .dropdown-content a:hover {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  /* Show the dropdown content on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  
+  
+  
+
+  
+  .action{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 25vh;
+  }
+
+  .profile{
+    color: white;
+    width: 90%;
+    margin-left: 3%;
+    margin-top: 3%;
+    padding: 10px 10px 10px 10px;
+    overflow-x: visible;
+   
+  }
+
+  .userinfo{
+    color: white;
+    width: 45%;
+    margin-left: 3%;
+    
+    padding: 10px 10px 10px 10px;
+    overflow-y: visible;
+   
+  }
+.userinfo ul li{
+    list-style: none;
+    margin-top: 2px;
+}
+
+.transac {
+  background-color: white;
+  width: 45%;
+  margin-top: 3%;
+  padding: 10px;
+  overflow-y: scroll;
+  border-radius: 10px;
+  box-shadow: 2px 2px black; 
+  height: 100vh;
+}
+
+/* Customize the scrollbar */
+.transac::-webkit-scrollbar {
+  width: 12px; /* width of the scrollbar */
+}
+
+.transac::-webkit-scrollbar-thumb {
+  background-color: #888; /* color of the thumb */
+  border-radius: 10px; /* roundness of the thumb */
+}
+
+.transac::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* color of the track */
+}
+
+/* For Firefox */
+.transac {
+  scrollbar-width: thin;
+}
+
+.transac::-moz-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+.transac::-moz-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+
+
+.transac h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.transac ul {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 10px;
+}
+
+.transac li {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.transac li:last-child {
+  border-bottom: none;
+}
+
+.transac li p {
+  margin: 0;
+}
+
+/* Customize the appearance of individual transaction details */
+.transac li p strong {
+  color: #333;
+}
+
+.transac li p em {
+  color: #777;
+}
+
+/* Add some spacing between transactions */
+.transac li + li {
+  margin-top: 10px;
+}
+
+.shopcart{
+    background-color: white;
+    width: 45%;
+    margin-right: 0px;
+    margin-top: 3%;
+    padding: 10px 10px 10px 10px;
+    overflow-y: scroll;
+    border-radius: 10px;
+    box-shadow: 2px 2px black;
+    height: 100vh;
+}
+
+
+
+/* Customize the scrollbar */
+.shopcart::-webkit-scrollbar {
+  width: 12px; /* width of the scrollbar */
+}
+
+.shopcart::-webkit-scrollbar-thumb {
+  background-color: #888; /* color of the thumb */
+  border-radius: 10px; /* roundness of the thumb */
+}
+
+.shopcart::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* color of the track */
+}
+
+
+.shopcart {
+  scrollbar-width: thin;
+}
+
+.shopcart::-moz-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+.shopcart::-moz-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+
+.shopcart ul li{
+    list-style: none;
+    margin-top: 2px;
+}
+
+.remove-from-cart-btn{
+border: 1px solid;
+background-color: black;
+color:white;
+padding: 5px;
+border-radius: 5px;
+
+}
+.remove-from-cart-btn:hover{
+  background-color: red;
+}
+.checkout-btn{
+  border: 1px solid;
+background-color: black;
+color:white;
+padding: 10px;
+border-radius: 5px;
+align-self: center;
+
+}
+
+.acthis{
+  background-color: white;
+  width: 45%;
+  margin-left: 20px;
+  margin-top: 3%;
+  margin-bottom: 100px;
+  padding: 10px 10px 10px 10px;
+  overflow-y: visible;
+  border-radius: 10px;
+  box-shadow: 2px 2px black; 
+}
+  
+  /* Responsive Styles */
+  @media only screen and (max-width: 820px) {
+    /* Adjust styles for tablets and smaller screens */
+  body{
+    overflow-x: hidden;
+  }
+  
+    .wrapper {
+        padding: 0 10px;
+    }
+  
+    .logo img {
+      margin-right: 20vh;
+  }
+
+  .nav-area {
+    display: none;
+  }
+  
+    
+  
+    .nav-area.show {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top:43px;
+      left: 0;
+      width: 1170px;
+      background: black;
+      
+      z-index: 1;
+    }
+    
+    .nav-area li {
+      text-align: center;
+      
+      margin: 15px;
+      
+    }
+  
+  
+  
+  .menu-icon {
+    display: block;
+    font-size: 25px;
+    color: white;
+    margin-top: 15px;
+    margin-left: 25px;
+  }
+ .userinfo{
+  margin-left: 3%;
+    margin-top: 3%;
+ }
+  .action{
+    margin-left: 3%;
+    justify-content: space-evenly;
+    width: 90%;
+  }
+  .transac{
+    overflow: scroll;
+  }
+  .shopcart{
+    overflow:scroll;
+  }
+  .acthis {
+    width: 90%;
+    margin-left: 3%;
+    overflow:scroll;
+  }
+}
+
+
+@media only screen and (max-width: 530px) {
+  /* Adjust styles for phones and smaller screens */
+  html{
+    height: 100%;
+  }
+body{
+  height: 100vh;
+  background: linear-gradient(to bottom right, black, white);
+  display: flex;
+  flex-direction: column;
+  background-repeat: repeat;
+}
+.logo img{
+margin: auto;
+}
+  
+  .leftpane {
+    display: flex; 
+    align-items: left; 
+   margin-left: -20px;
+    margin-top: 10px;
+    align-items: center;
+  }
+  
+  .leftpane i {
+    margin-right: 20px; 
+    font-size: 15px;
+    
+    
+  }
+
+  .leftpane .fa-magnifying-glass{
+    display: block;
+  }
+
+
+  .menu-icon {
+    display: block;
+    font-size: 15px;
+    color: white;
+    margin-top: 15px;
+    margin-left: 25px;
+  }
+
+
+  .nav-area {
+    display: none;
+    
+  }
+  .nav-area.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top:43px;
+    left: 0;
+    width: 100%;
+    background: black;
+    
+    z-index: 1;
+  }
+  .profile{
+    width: auto;
+  }
+  .userinfo{
+    width: 70%;
+  }
+.action{
+  display:inline-block;
+  justify-content: space-around;
+  margin-bottom: 150px;
+  
+}
+.action h2{
+  font-size: 15px;
+}
+
+.action li {
+  font-size: 12px;
+}
+.transac{
+  height:50vh;
+  width: 90%;
+  overflow: scroll;
+}
+
+.shopcart{
+  height: 50vh;
+  width: 90%;
+  overflow: scroll;
+  margin-bottom: 150px;
+}
+
+.acthis {
+  width: 90%;
+  overflow:scroll;
+}
+
+
+
+}

@@ -1,0 +1,156 @@
+body {
+  background: linear-gradient(to bottom right, black, white);
+  font-family: 'Playfair Display', serif;
+  opacity: 0;
+  transform: translateY(20px); /* Move the page down initially */
+animation: fadeInSlideUp 1s ease-out forwards; /* Apply the animation directly */
+}
+
+/* Keyframe animation for fading in and sliding up */
+@keyframes fadeInSlideUp {
+from {
+opacity: 0;
+transform: translateY(20px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+
+/* Global Styles */
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Container Styles */
+
+
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background: #f1f1f1;
+  border: 2px solid;
+  border-image: linear-gradient(to right, white, black);
+  border-radius: 5px;
+  border-image-slice: 1;
+}
+
+.center h3 {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.center form {
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.textfield {
+  position: relative;
+}
+
+.textfield input {
+  width: 100%;
+  height: 40px;
+  font-size: 15px;
+  margin: 10px 0;
+  background: black;
+  outline: none;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-color: #E5E4E2;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  box-shadow: 3px 3px 3px 0 red;
+}
+
+.textfield label {
+  position:absolute;
+    left:40%;
+    top:20%;
+    color:black;
+    transform:translateY(-50);
+    font-size:17px;
+    pointer-events:none;
+    transition: .5s;
+}
+
+.textfield input:focus ~ label,
+.textfield input:valid ~ label {
+  
+  top: -10px;
+  color: black;
+}
+
+.textfield .toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 15px;
+  width: 24px;
+  height: 24px;
+}
+
+form a {
+  text-decoration: none;
+  color: gray;
+  cursor: pointer;
+}
+
+form a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
+
+input[type="submit"] {
+  width: 100%;
+  height: 40px;
+  border: 1px solid;
+  border-radius: 10px;
+  font-size: 18px;
+  color: black;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-family: 'Playfair Display', serif;
+}
+
+input[type="submit"]:hover {
+  border-color: red;
+  transition: 0.5s;
+}
+
+
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+

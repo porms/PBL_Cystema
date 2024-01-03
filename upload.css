@@ -1,0 +1,690 @@
+#content {
+  width: 40%; /* Adjust the width as needed */
+  margin: 20px auto;
+  border: 1px solid black;
+  background: white;
+  
+}
+#upproduct {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ 
+}
+.btn{
+    display: block;
+    width: 70%;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 1px;
+    font-size: 15px;
+    padding: 10px 15px;
+    color: white;
+    background-color: black;
+    margin-left: 65px;
+}
+.btn:hover{
+    box-shadow: 1px 1px 1px red;
+}
+
+
+
+form .h3{
+   padding-left:25px ;
+    margin-left: 45px;
+}
+
+form{
+    text-align: center;
+    padding-left: 25px;
+    margin: 20px auto;
+}
+
+form div{
+    margin-top: 5px;
+}
+
+
+
+
+
+
+#content .box{
+    width: 290px;
+    border-radius: 5px;
+    padding:15px 10px;
+    font-size: 17px;
+    margin: 5px;
+    background: #E8E9EB;
+    border: none;
+    text-transform: none;
+}
+
+.file-button {
+    display: block;
+    width: 60%;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 1px;
+    font-size: 15px;
+    padding: 10px 15px;
+    color: white;
+    background-color: black;
+    margin-left: 65px;
+  }
+  
+  
+  .file-button:hover, .file-button.hover{
+    box-shadow: 1px 1px 1px 1px red;
+  }
+
+  .file-input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+  }
+
+
+  #contentupdate{
+    width:40%;
+      margin: 20px auto;
+      border: 1px solid black;
+      background: #E8E9EB;
+  }
+  #contentupdate .box{
+    width: 290px;
+    border-radius: 5px;
+    padding:15px 10px;
+    font-size: 17px;
+    margin: 5px;
+    background: white;
+    border: none;
+    text-transform: none;
+    
+  }
+  #contentupdate a{
+    text-decoration: none;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+
+
+
+
+.divide h2{
+  text-align: center;
+}
+
+
+  .productdisplay {
+    margin: 30px;
+    overflow-x: scroll; 
+    height: 900px;
+    background-color: white;
+}
+
+
+.productdisplay::-webkit-scrollbar {
+  width: 12px; /* Width of the custom scrollbar */
+}
+
+.productdisplay::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track color */
+}
+
+.productdisplay::-webkit-scrollbar-thumb {
+  background-color: #888; /* Thumb color */
+  border-radius: 6px; /* Rounded corners */
+  border: 3px solid #fff; /* Border around the thumb */
+}
+
+.productdisplay::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Hover color for the thumb */
+}
+
+
+.productttable {
+  width: 100%;
+ 
+  border-collapse: collapse;
+}
+
+.productttable thead {
+  padding: 20px; /* Adjust the padding as needed */
+  font-size: 17px;
+  background-color: black;
+  color: white;
+ 
+}
+
+.productttable th, .productttable td {
+  padding: 15px; /* Adjust the padding as needed */
+  text-align: center; /* Center items in each column */
+  border-bottom: 1px solid red;
+}
+.productttable td img {
+  display: block;
+  margin: 0 auto; /* Center images in the cell */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f7f7f7;
+}
+ 
+.productttable td .action-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #333;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+.productttable td .action-button i {
+  margin-right: 5px;
+}
+
+    .productttable td .edit-button {
+        background-color: black;
+        color: #fff;
+        border-radius: 5px;
+    }
+
+    .productttable td .delete-button {
+        background-color: red;
+        color: #fff;
+        border-radius: 5px;
+    }
+
+    .productttable td .edit-button, .productttable td .delete-button {
+      display: block;
+      width: 80px; /* Adjust the width as needed */
+      margin: 0 auto; /* Center buttons in the cell */
+      border-radius: 5px;
+  }
+
+  .productttable td .delete-button:hover,
+  .productttable td .delete-button.active,
+  .productttable td .edit-button:hover,
+  .productttable td .edit-button.active {
+      box-shadow: 2px 2px 2px black;
+  }
+
+
+
+
+body {
+  
+  animation-fill-mode: both;
+  margin: 0;
+  padding: 0;
+  font-family: 'Playfair Display', serif;
+  height: 100%;
+  overflow-y: scroll;
+  width: 100%;
+  background-color:#E8E9EB;
+  /*background: #E8E9EB;*/
+  overflow-x: hidden;
+  opacity: 0;
+  transform: translateY(20px); /* Move the page down initially */
+animation: fadeInSlideUp 1s ease-out forwards; /* Apply the animation directly */
+}
+
+/* Keyframe animation for fading in and sliding up */
+@keyframes fadeInSlideUp {
+from {
+opacity: 0;
+transform: translateY(20px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+
+
+
+.wrapper {
+  width: 100%;
+  max-width: 1170px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+nav {
+  background: black;
+  height: 73px;
+}
+
+.nav-area {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: left;
+  padding-top: 40px;
+ 
+}
+
+.logo img {
+  height: auto;
+  width: 100px;
+  padding-top: 20px;
+  margin-left: 55px;
+  margin-right: 550px;
+}
+
+
+.togglesidebar {
+  font-size: 24px; 
+  color: white; 
+  cursor: pointer; 
+  transform:translateX(-910px);
+  margin-top: 9px;
+  
+}
+
+
+.togglesidebar:hover {
+  color: #555; 
+}
+
+
+.togglesidebar.active {
+  color: #f00; 
+}
+
+
+img {
+  
+  margin-left: -90px;
+  margin-top: 0px;
+ 
+  z-index: 10;
+}
+
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+}
+
+.search-box {
+  padding: 8px;
+  transform:translateX(-410px);
+  border: none;
+  border-radius: 5px;
+}
+
+.notification-icon {
+  font-size: 24px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.profile-dropdown .fa-user{
+  margin-right: 29px;
+}
+
+
+
+
+
+
+.profile-dropdown {
+  position: relative;
+  cursor: pointer;
+  align-items: center;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 29px; 
+  border-radius: 10px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+
+
+
+
+.sidebar {
+  position: absolute;
+  top: 70px;
+  left: -200px; 
+  width: 200px;
+  height: 40%;
+  background-color: black;
+  padding: 20px;
+  border: 2px solid black;
+  overflow-y: scroll;
+  border-radius: 5px;
+  scrollbar-width: none;
+  
+  transition: left 0.3s ease; 
+}
+.sidebar::-webkit-scrollbar{
+display: none;  
+}
+
+.sidebar a{
+  text-decoration: none;
+}
+
+.sidebar li{
+  list-style: none;
+  margin-top: 5px;
+}
+
+.sidebar .icon{
+  min-width: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.sidebar .sidemenu{
+  margin: 36px 0;
+  padding: 20px;
+  
+}
+
+.sidebar .sidemenu a{
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 14px;
+  padding: 12px 16px 12px 0;
+  transition: all .3s ease;
+  border-radius: 10px;
+ 
+
+}
+
+.sidebar .iconn {
+  margin-left: 4px;
+  transition: all .3s ease;
+}
+
+
+.rotate-90 {
+  transform: rotate(90deg);
+  transition: transform 0.3s ease;
+}
+
+
+.sidebar .sidemenu a:hover,
+.sidebar .sidemenu a.active {
+  background: white;
+  color:black;
+  
+}
+
+
+.sidebar .orderdropdown{
+padding-left: 48px;
+max-height: 0;
+overflow-y: hidden;
+transition: all 15s ease;
+}
+
+.sidebar .orderdropdown:hover{
+  color:red;
+}
+.sidebar .orderdropdown {
+  padding-left: 48px;
+  max-height: 0;
+  overflow-y: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.sidebar .orderdropdown.show {
+  max-height: none;
+}
+.sidebar.show {
+left: 0;
+}
+
+/*SIDEBAR UPDATE*/
+
+.sidebarupdate {
+  position: absolute;
+  top: 70px;
+  left: -200px; 
+  width: 200px;
+  height: 60%;
+  background-color: black;
+  padding: 20px;
+  border: 2px solid black;
+  overflow-y: scroll;
+  border-radius: 5px;
+  scrollbar-width: none;
+  
+  transition: left 0.3s ease; 
+}
+.sidebarupdate::-webkit-scrollbar{
+display: none;  
+}
+
+.sidebarupdate a{
+  text-decoration: none;
+}
+
+.sidebarupdate li{
+  list-style: none;
+  margin-top: 5px;
+}
+
+.sidebarupdate .icon{
+  min-width: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.sidebarupdate .sidemenu{
+  margin: 36px 0;
+  padding: 20px;
+  
+}
+
+.sidebarupdate .sidemenu a{
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 14px;
+  padding: 12px 16px 12px 0;
+  transition: all .3s ease;
+  border-radius: 10px;
+ 
+
+}
+
+.sidebarupdate .iconn {
+  transition: all .3s ease;
+}
+
+
+.rotate-90 {
+  transform: rotate(90deg);
+  transition: transform 0.3s ease;
+}
+
+
+.sidebarupdate .sidemenu a:hover,
+.sidebarupdate .sidemenu a.active {
+  background: white;
+  color:black;
+  
+}
+
+
+.sidebarupdate .orderdropdown{
+padding-left: 48px;
+max-height: 0;
+overflow-y: hidden;
+transition: all 15s ease;
+}
+
+.sidebarupdate .orderdropdown:hover{
+  color:red;
+}
+.sidebarupdate .orderdropdown {
+  padding-left: 48px;
+  max-height: 0;
+  overflow-y: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.sidebarupdate .orderdropdown.show {
+  max-height: none;
+}
+.sidebarupdate.show {
+left: 0;
+}
+
+
+@media only screen and (max-width: 830px) {
+  .wrapper {
+    padding: 0;
+    width: 100%;
+  }
+
+  #content,
+  #contentupdate {
+    width: 80%; /* Adjust the width as needed for tablet */
+  }
+
+  .btn,
+  .file-button {
+    width: 80%; /* Make buttons full width on smaller screens */
+  }
+
+  .logo img {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .togglesidebar {
+    transform: translateX(-610px);
+    color: white;
+  }
+
+  .sidebar,
+  .sidebarupdate {
+    display: none;
+    width: 200px; 
+    top: 43px;
+    height: 40%;
+    background-color: black;
+    padding: 20px;
+    border: 2px solid black;
+    overflow-y: scroll;
+    border-radius: 5px;
+    scrollbar-width: none;
+    z-index: 1;
+    
+  }
+
+  .sidebar {
+    display: none;
+  }
+  .sidebarupdate{
+    display: none;
+  }
+}
+
+/* Add this style to override the sidebar width when it's shown */
+.sidebar.show{
+  display: block;
+}
+
+/* Phone View */
+@media only screen and (max-width: 480px) {
+
+ 
+
+  
+  #content,
+  #contentupdate {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .btn {
+    width: 90%; 
+    margin-left: 3%; 
+  }
+  .file-button {
+    width: 80%; 
+    margin-left: 3%; 
+  }
+
+ 
+ 
+
+
+
+  
+  .wrapper {
+    width: 100%;
+    padding: 0; 
+  }
+ 
+  .logo img {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .togglesidebar {
+    transform: translateX(-250px);
+  }
+
+  
+
+  .dropdown-content {
+    right: 5px; /* Adjust the dropdown position */
+  }
+  .sidebar {
+    display: none;
+  }
+  .sidebar.show{
+    display: block;
+  }
+  
+
+
+ 
+
+ 
+
+  
+}

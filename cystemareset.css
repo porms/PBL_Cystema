@@ -1,0 +1,267 @@
+
+
+body {
+ 
+  animation-fill-mode: both;
+  margin: 0;
+  padding: 0;
+  font-family: 'Playfair Display', serif;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  background: white;
+  opacity: 0;
+  transform: translateY(20px); /* Move the page down initially */
+animation: fadeInSlideUp 1s ease-out forwards; /* Apply the animation directly */
+}
+
+/* Keyframe animation for fading in and sliding up */
+@keyframes fadeInSlideUp {
+from {
+opacity: 0;
+transform: translateY(20px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+
+
+
+.wrapper {
+  width: 100%;
+  max-width: 1170px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+nav {
+  background: black;
+  height: 73px;
+}
+
+.nav-area {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: left;
+  padding-top: 40px;
+ 
+}
+
+.logo img {
+  height: auto;
+  width: 100px;
+  padding-top: 20px;
+  margin-right: 550px;
+}
+
+.toggle-menu {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.exit-icon {
+  display: none;
+}
+
+img {
+  
+  margin-left: 1px;
+  margin-top: 0px;
+ 
+  z-index: 10;
+}
+
+ul li {
+  margin-left: -10px;
+  margin-top: -10px;
+  
+}
+
+ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  padding: 5px 20px;
+  border: 1px solid white;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+ul li a:hover,
+ul li a.active {
+  box-shadow: 6px 6px 6px 0px red;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  transition: 0.5s;
+}
+
+.leftpane {
+  display: flex; 
+  align-items: left; 
+ margin-left: -170px;
+  margin-top: 10px;
+}
+
+.leftpane i {
+  margin-right: 30px; 
+  font-size: 20px;
+  
+  
+}
+
+
+
+
+/* Center Styles */
+
+.center {
+  position: absolute;
+  top: 400%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background: #f1f1f1;
+  border: 2px solid;
+  border-image: linear-gradient(to right, white, black);
+  border-radius: 5px;
+  border-image-slice: 1;
+}
+
+.center h1 {
+  text-align: center;
+  padding: 0 0 20px 0;
+}
+
+.center form {
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+.textfield {
+  position: relative;
+}
+
+.textfield input {
+  width: 95%;
+  height: 40px;
+  font-size: 15px;
+  margin: 10px;
+  background: black;
+  outline: none;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-color: #e5e4e2;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  box-shadow: 3px 3px 3px 0 red;
+}
+
+.textfield label {
+  position: absolute;
+  left: 40%;
+  top: 20%;
+  color: black;
+  transform: translateY(-50);
+  font-size: 17px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.textfield span::before {
+  content: '';
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 0%;
+  height: 4px;
+  background: black;
+  transition: 0.5s;
+}
+
+.textfield input:focus ~ label,
+.textfield input:valid ~ label {
+  top: -10px;
+  color: black;
+}
+
+.textfield .toggle-password {
+  position: absolute;
+  top: 55%;
+  right: 15px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 15px;
+  width: 24px;
+  height: 24px;
+}
+
+form a {
+  text-decoration: none;
+  color: gray;
+  cursor: pointer;
+}
+
+form a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.register {
+  margin: 5px 0 20px 10px;
+  color: black;
+  cursor: pointer;
+}
+
+.register:hover {
+  text-decoration: underline;
+}
+
+input[type="submit"] {
+  width: 100%;
+  height: 40px;
+  border: 1px solid;
+  border-radius: 10px;
+  font-size: 18px;
+  color: black;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-family: 'Playfair Display', serif;
+}
+
+input[type="submit"]:hover {
+  border-color: red;
+  transition: 0.5s;
+}
+
+
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

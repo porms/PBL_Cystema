@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+
+    <title>Cystema Clothing</title>
+    <style>
+        body {
+            animation: transitionIn 0.75s;
+            animation-fill-mode: both;
+            margin: 0;
+            padding: 0;
+            font-family: 'Playfair Display', serif;
+
+            overflow-y: scroll;
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(to bottom right, black, white);
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            opacity: 0;
+            transform: translateY(20px); /* Move the page down initially */
+    animation: fadeInSlideUp 1s ease-out forwards; /* Apply the animation directly */
+}
+
+/* Keyframe animation for fading in and sliding up */
+@keyframes fadeInSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .content-box {
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    text-align: center;
+    border: 2px solid;
+    border-image: linear-gradient(to right, white, black);
+    border-image-slice: 1;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+        h1 {
+            color: black;
+            font-size: 40px;
+        }
+
+        h1 strong {
+            color: #fff;
+        }
+
+        p {
+            max-width: 600px;
+            text-align: center;
+            margin: 20px 0;
+            color: black;
+            font-size: 15px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: black;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 15px;
+            transition: background-color 0.3s ease;
+            border: 1px solid white;
+        }
+
+        .cta-button:hover {
+            background-color: white;
+            color: black;
+        }
+
+        footer {
+            color: black;
+            padding: 20px 0;
+            bottom: 0;
+            position: absolute;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <section>
+        <div class="content-box">
+            <h1>Welcome to <strong>CYSTEMA</strong></h1>
+            <p>
+                Where fashion meets rebellion. Break free from the ordinary with our unique collection. Redefine your style, break the rules, and elevate your wardrobe with Cystema.
+            </p>
+            <a href="cystemahome.php" class="cta-button">Shop Now</a>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2023 Cystema Clothing. All rights reserved.
+    </footer>
+</body>
+</html>

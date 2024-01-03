@@ -1,0 +1,150 @@
+
+body {
+  animation: transitionIn 0.75s;
+  animation-fill-mode: both;
+  margin: 0;
+  padding: 0;
+  font-family: comic sans ms;
+  height: 100%;
+  overflow-y: scroll;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #E8E9EB;
+  opacity: 0;
+  transform: translateY(20px); /* Move the page down initially */
+animation: fadeInSlideUp 1s ease-out forwards; /* Apply the animation directly */
+}
+
+/* Keyframe animation for fading in and sliding up */
+@keyframes fadeInSlideUp {
+from {
+opacity: 0;
+transform: translateY(20px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+
+.freedomwall h2{
+  color: black;
+  text-align: center;
+  padding-right: 120px;
+  
+}
+
+.freedomwall .wall{
+height: 590px;
+width: 920px;
+border: 2px solid black;
+overflow: hidden;
+position: relative;
+background-color: #E8E9EB;
+}
+
+.sticky-note {
+  position: absolute;
+  background-color: yellow;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+
+.freedomwall{
+  margin-bottom: 50px;
+  margin-left: 85px;
+  
+}
+
+
+.line{
+  border-bottom: 2px solid black;
+}
+
+.content{
+  padding-left: 340px;
+}
+
+ /* Add your styles for the button */
+ #uploadForm button {
+  background-color:black;
+  color: white; 
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none; 
+  cursor: pointer; 
+  border-radius: 5px; 
+  margin-bottom: 15px;
+}
+
+/* Add a hover effect */
+#uploadForm button:hover {
+  box-shadow: 1px 1px 1px 1px red;
+}
+
+.file-input-container {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+/* Style for the actual file input */
+.file-input {
+  position: absolute;
+  font-size: 100px;
+  right: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.file-button {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.file-button:hover, .file-button.hover{
+  box-shadow: 1px 1px 1px 1px red;
+}
+
+
+
+
+
+
+footer p{
+  color:white;
+  font-size: 25px;
+  padding-top: 5px;
+}
+
+
+.links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  font-size: 20px;
+  color: white;
+}
+
+.links li {
+  margin: 0 10px; /* Adjust the margin as needed */
+}
+
+footer {
+  text-align: center;
+  height: 150px;
+  background-color: black;
+  bottom: 0;
+
+}
